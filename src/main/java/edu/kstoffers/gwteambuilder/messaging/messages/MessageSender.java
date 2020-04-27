@@ -1,4 +1,4 @@
-package edu.kstoffers.gwteambuilder.stomp;
+package edu.kstoffers.gwteambuilder.messaging.messages;
 
 public class MessageSender {
 

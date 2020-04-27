@@ -13,6 +13,7 @@
         <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
         <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+        <webjars.locator.core.version>0.45</webjars.locator.core.version>
     </properties>
 
     <dependencies>
@@ -38,6 +39,10 @@
                     <artifactId>slf4j-api</artifactId>
                     <groupId>org.slf4j</groupId>
                 </exclusion>
+                <exclusion>
+                    <artifactId>jackson-core</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
             </exclusions>
         </dependency>
 
@@ -45,6 +50,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
             <version>${spring.boot.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jackson-core</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -52,6 +63,21 @@
             <artifactId>thymeleaf-spring3</artifactId>
             <version>${thymeleaf.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-locator-core</artifactId>
+            <version>0.45</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

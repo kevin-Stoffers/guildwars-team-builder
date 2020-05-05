@@ -1,4 +1,4 @@
-package edu.kstoffers.gwteambuilder.messaging.messages;
+package edu.kstoffers.gwteambuilder.io.messages;
 
 public class MessageReceiver {
 

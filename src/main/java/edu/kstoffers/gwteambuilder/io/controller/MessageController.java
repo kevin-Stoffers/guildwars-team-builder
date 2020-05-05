@@ -1,7 +1,7 @@
-package edu.kstoffers.gwteambuilder.messaging.controller;
+package edu.kstoffers.gwteambuilder.io.controller;
 
-import edu.kstoffers.gwteambuilder.messaging.messages.MessageReceiver;
-import edu.kstoffers.gwteambuilder.messaging.messages.MessageSender;
+import edu.kstoffers.gwteambuilder.io.messages.MessageReceiver;
+import edu.kstoffers.gwteambuilder.io.messages.MessageSender;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
